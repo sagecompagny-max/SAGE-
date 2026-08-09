@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>S.A.G.E - Smart Advanced Growth Economy</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+<!-- ========================= -->
+<!-- PAGE PRINCIPALE S.A.G.E -->
+<!-- ========================= -->
+
+
+<header class="top-header">
+
+<div class="brand">
+
+<img 
+src="images/logo.png" 
+alt="Logo S.A.G.E"
+class="logo">
+
+
+<div class="brand-name">
+
+<h1>S.A.G.E</h1>
+
+<p>
+Smart Advanced Growth Economy
+</p>
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- ========================= -->
+<!-- ESPACE AUTHENTIFICATION -->
+<!-- ========================= -->
+
+
+<section class="auth-section">
+
+
+<div class="auth-card">
+
+
+
+<div class="auth-title">
+
+
+<h2>
+Bienvenue sur S.A.G.E
+</h2>
+
+
+<p>
+La plateforme intelligente de produits et récompenses.
+</p>
+
+
+</div>
+
+
+
+
+
+<!-- CHOIX CONNEXION / INSCRIPTION -->
+
+
+<div class="auth-tabs">
+
+
+<button 
+id="loginTab"
+class="tab-active">
+
+Connexion
+
+</button>
+
+
+
+<button 
+id="registerTab">
+
+Inscription
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- FORMULAIRE CONNEXION -->
+<!-- ========================= -->
+
+
+<div 
+id="loginForm"
+class="form-container">
+
+
+
+<h3>
+Se connecter
+</h3>
+
+
+
+
+<label>
+Numéro de téléphone
+</label>
+
+
+
+<div class="phone-input">
+
+
+<span>
++237
+</span>
+
+
+<input 
+type="tel"
+id="loginPhone"
+placeholder="6XXXXXXXX">
+
+</div>
+
+
+
+
+
+
+<label>
+Code PIN
+</label>
+
+
+
+<input 
+type="password"
+id="loginPassword"
+placeholder="Votre code PIN">
+
+
+
+
+
+<button 
+id="loginButton"
+class="main-button">
+
+Se connecter
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- FORMULAIRE INSCRIPTION -->
+<!-- ========================= -->
+
+
+<div 
+id="registerForm"
+class="form-container hidden">
+
+
+
+<h3>
+Créer un compte
+</h3>
+
+
+
+
+
+<label>
+Votre prénom
+</label>
+
+
+<input
+type="text"
+id="firstName"
+placeholder="Votre prénom">
+
+
+
+
+
+<label>
+Numéro de téléphone
+</label>
+
+
+
+<div class="phone-input">
+
+
+<span>
++237
+</span>
+
+
+<input
+type="tel"
+id="registerPhone"
+placeholder="6XXXXXXXX">
+
+
+</div>
+
+
+
+
+
+
+<label>
+Créer un code PIN
+</label>
+
+
+<input
+type="password"
+id="registerPassword"
+placeholder="6 chiffres">
+
+
+
+
+
+
+<label>
+Confirmer le code PIN
+</label>
+
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirmer votre PIN">
+
+
+
+
+
+
+<label>
+Code invitation
+</label>
+
+
+<input
+type="text"
+id="inviteCode"
+placeholder="Code du parrain">
+
+
+
+
+
+
+<button
+id="registerButton"
+class="main-button">
+
+
+Créer mon compte
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- ========================= -->
+<!-- ESPACE UTILISATEUR -->
+<!-- ========================= -->
+
+
+<section 
+id="homeSection"
+class="hidden">
+
+
+<!-- MESSAGE BIENVENUE -->
+
+
+<div class="welcome-box">
+
+
+<h2>
+
+Bienvenue sur S.A.G.E,
+
+<span id="userName">
+
+Utilisateur
+
+</span>
+
+</h2>
+
+
+<p>
+
+Vous avez reçu 500F pour la création de votre compte.
+
+</p>
+
+
+<p>
+
+Dépôt minimum : 5000F
+
+</p>
+
+
+<p>
+
+Retrait minimum : 2000F
+
+</p>
+
+
+<p>
+
+Bonus de connexion : 50F
+
+</p>
+
+
+<p>
+
+Invitez vos amis et profitez jusqu'à 20% de commission.
+
+</p>
+
+
+
+<button 
+id="closeWelcome">
+
+×
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- LOGO INTERIEUR -->
+
+
+<div class="inside-header">
+
+
+<img 
+src="images/logo.png"
+alt="Logo S.A.G.E"
+class="small-logo">
+
+
+
+<h2>
+
+S.A.G.E
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- IMAGE PRODUITS DEFILANTE -->
+
+
+<div class="slider-container">
+
+
+<img
+
+id="sliderImage"
+
+src="images/tracteur.png"
+
+alt="Produit S.A.G.E"
+
+>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- BOUTONS RAPIDES -->
+
+
+<div class="quick-actions">
+
+
+
+<button id="rechargeButton">
+
+💰
+
+<br>
+
+Recharger
+
+</button>
+
+
+
+<button id="withdrawButton">
+
+💳
+
+<br>
+
+Retirer
+
+</button>
+
+
+
+
+
+<button id="bonusButton">
+
+🎁
+
+<br>
+
+Bonus
+
+</button>
+
+
+
+
+
+<button id="inviteButton">
+
+👥
+
+<br>
+
+Inviter
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PRESENTATION PRODUITS -->
+
+
+<div class="presentation">
+
+
+<h2>
+
+Nos produits
+
+</h2>
+
+
+<p>
+
+Découvrez nos produits disponibles et leurs récompenses.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 1 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/aspirateur.png" alt="Aspirateur">
+
+    <h3>Aspirateur professionnel</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            5 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            500 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            10 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="aspirateur">
+        Acheter
+    </button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 2 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/scie-disque.png" alt="Scie à disque">
+
+    <h3>Scie à disque</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            9 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            900 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            18 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="scie-disque">
+    Acheter
+</button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 3 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/perceuse.png" alt="Perceuse">
+
+    <h3>Perceuse</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            15 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            1 500 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            30 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="perceuse">
+        Acheter
+    </button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 4 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/pulverisateur.png" alt="Pulvérisateur">
+
+    <h3>Pulvérisateur</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            26 750 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            3 210 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            64 200 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="pulverisateur">
+        Acheter
+    </button>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- PRODUIT 5 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/tronçonneuse.png" alt="Tronçonneuse">
+
+    <h3>Tronçonneuse</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            50 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            7 500 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            150 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="tronconneuse">
+        Acheter
+    </button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 6 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/tracteur.png" alt="Tracteur">
+
+    <h3>Tracteur</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            80 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            16 000 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            320 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="tracteur">
+        Acheter
+    </button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PRODUIT 7 -->
+<!-- ========================= -->
+
+<div class="product-card">
+
+    <img src="images/debroussailleuse.png" alt="Débroussailleuse">
+
+    <h3>Débroussailleuse</h3>
+
+    <div class="product-info">
+
+        <div>
+            Prix produit
+            <br>
+            100 000 F
+        </div>
+
+        <div>
+            Récompense quotidienne
+            <br>
+            35 000 F
+        </div>
+
+        <div>
+            Période
+            <br>
+            20 jours
+        </div>
+
+        <div>
+            Récompense totale
+            <br>
+            700 000 F
+        </div>
+
+    </div>
+
+    <button class="buy-button" data-product="debroussailleuse">
+        Acheter
+    </button>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- BARRE DE NAVIGATION -->
+
+
+<nav class="bottom-nav">
+
+
+
+<button 
+class="nav-active"
+id="navHome">
+
+Accueil
+
+</button>
+
+
+
+
+<button id="navProducts">
+
+Produit
+
+</button>
+
+
+
+
+
+<button id="navTeam">
+
+Mon équipe
+
+</button>
+
+
+
+
+
+<button id="navAccount">
+
+Compte
+
+</button>
+
+
+
+
+</nav>
+
+
+
+
+
+
+</section>
+<!-- ========================= -->
+<!-- PAGE PRODUITS -->
+<!-- ========================= -->
+
+
+<section id="productsSection" class="hidden">
+
+<div class="inside-header">
+    <button class="back-btn" id="backFromProducts">←</button>
+    <img src="images/logo.png" class="small-logo" alt="Logo S.A.G.E">
+    <h2>Mes Produits</h2>
+</div>
+
+
+
+
+
+<div class="balance-container">
+
+
+<div class="balance-card">
+
+
+<h3>
+Solde recharge
+</h3>
+
+
+<p id="rechargeBalance">
+
+0 F
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="balance-card">
+
+
+<h3>
+Solde retrait
+</h3>
+
+
+<p id="withdrawBalance">
+
+0 F
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<h2>
+
+Produits achetés
+
+</h2>
+
+
+
+<div id="myProducts">
+    <p id="noProductsMessage">Aucun produit acheté pour le moment.</p>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- PAGE EQUIPE -->
+<!-- ========================= -->
+
+<section id="teamSection" class="hidden">
+
+    <div class="inside-header">
+        <button class="back-btn" id="backFromTeam">←</button>
+        <img src="images/logo.png" class="small-logo" alt="Logo S.A.G.E">
+        <h2>Mon équipe</h2>
+    </div>
+
+    <!-- Stats équipe -->
+    <div class="team-stats">
+        <div class="team-stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-info">
+                <p class="stat-label">Taille de l'équipe</p>
+                <p class="stat-value" id="teamSize">0</p>
+            </div>
+        </div>
+        <div class="team-stat-card">
+            <div class="stat-icon">💰</div>
+            <div class="stat-info">
+                <p class="stat-label">Commission totale</p>
+                <p class="stat-value" id="totalCommission">0 F</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Niveaux de commission -->
+    <div class="team-levels">
+        <div class="level-card">
+            <span class="level-badge level-1">Niveau 1</span>
+            <p class="level-percent">20%</p>
+            <p class="level-amount" id="level1Amount">0 F</p>
+        </div>
+        <div class="level-card">
+            <span class="level-badge level-2">Niveau 2</span>
+            <p class="level-percent">10%</p>
+            <p class="level-amount" id="level2Amount">0 F</p>
+        </div>
+        <div class="level-card">
+            <span class="level-badge level-3">Niveau 3</span>
+            <p class="level-percent">1%</p>
+            <p class="level-amount" id="level3Amount">0 F</p>
+        </div>
+    </div>
+
+    <!-- Lien et code d'invitation -->
+    <div class="invite-box">
+        <h3>Lien d'invitation</h3>
+        <div class="copy-row">
+            <input type="text" id="inviteLink" readonly value="https://sage-app.com/?code=SAGE0000">
+            <button id="copyLinkBtn" class="copy-btn">Copier</button>
+        </div>
+
+        <h3>Code d'invitation</h3>
+        <div class="copy-row">
+            <input type="text" id="myCode" readonly value="SAGE0000">
+            <button id="copyCodeBtn" class="copy-btn">Copier</button>
+        </div>
+
+        <button id="shareButton" class="main-button" style="margin-top: 20px;">
+            📤 Partager mon lien
+        </button>
+    </div>
+
+    <!-- Détails de l'équipe -->
+    <div class="team-details">
+        <h3>Détails de l'équipe</h3>
+        <div class="level-tabs">
+            <button class="level-tab active" data-level="1">Niveau 1 <span id="countLevel1">0</span></button>
+            <button class="level-tab" data-level="2">Niveau 2 <span id="countLevel2">0</span></button>
+            <button class="level-tab" data-level="3">Niveau 3 <span id="countLevel3">0</span></button>
+        </div>
+        <div id="teamMembersList" class="team-members">
+            <p class="empty-team">Aucun membre à ce niveau</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- PAGE COMPTE -->
+<!-- ========================= -->
+
+<section id="accountSection" class="hidden">
+
+    <!-- En-tête -->
+    
+    <div class="inside-header">
+        <button class="back-btn" id="backFromAccount">←</button>
+        <img src="images/logo.png" class="small-logo" alt="Logo S.A.G.E">
+        <h2>Mon compte</h2>
+    </div>
+
+    <!-- Infos utilisateur -->
+    <div class="profile-card">
+        <h3 id="profileName">Prénom utilisateur</h3>
+        <p id="profilePhone">+237XXXXXXXXX</p>
+        <p>Code parrainage : <span id="profileCode">SAGE0000</span></p>
+    </div>
+
+    <!-- Soldes -->
+    <div class="balance-container">
+        <div class="balance-card">
+            <h3>Solde recharge</h3>
+            <p id="accountRechargeBalance">0 F</p>
+        </div>
+        <div class="balance-card">
+            <h3>Solde retrait</h3>
+            <p id="accountWithdrawBalance">0 F</p>
+        </div>
+    </div>
+
+    <!-- Boutons rapides -->
+    <div class="account-actions">
+        <button id="accountRechargeBtn" class="account-action-btn">
+            💰 Recharger
+        </button>
+        <button id="accountWithdrawBtn" class="account-action-btn">
+            💳 Retirer
+        </button>
+    </div>
+
+    <!-- Liste des services -->
+    <div class="account-services">
+        
+        <button id="requeteBtn" class="service-item">
+    <span>📨 Envoyer une requête</span>
+    <span>›</span>
+</button>
+
+
+        <button id="historyBtn" class="service-item">
+            <span>📋 Historique des transactions</span>
+            <span>›</span>
+        </button>
+
+        <button id="accountTeamBtn" class="service-item">
+            <span>👥 Mon équipe</span>
+            <span>›</span>
+        </button>
+
+        <button id="accountBonusBtn" class="service-item">
+            <span>🎁 Bonus quotidien</span>
+            <span>›</span>
+        </button>
+
+        <button id="logoutBtn" class="service-item logout-item">
+            <span>🚪 Se déconnecter</span>
+            <span>›</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- PAGE ADMIN -->
+<!-- ========================= -->
+
+<section id="adminSection" class="hidden">
+
+    <div class="inside-header">
+        <button class="back-btn" id="backFromAdmin">←</button>
+        <img src="images/logo.png" class="small-logo" alt="Logo S.A.G.E">
+        <h2>Administration</h2>
+    </div>
+
+    <div class="admin-tabs">
+        <button class="admin-tab active" data-tab="recharges">Recharges</button>
+        <button class="admin-tab" data-tab="retraits">Retraits</button>
+        <button class="admin-tab" data-tab="requetes">Requêtes</button>
+    </div>
+
+    <div id="adminRecharges" class="admin-list">
+        <p style="text-align:center;color:#999;padding:20px;">Aucune demande de recharge</p>
+    </div>
+
+    <div id="adminRetraits" class="admin-list hidden">
+        <p style="text-align:center;color:#999;padding:20px;">Aucune demande de retrait</p>
+    </div>
+
+    <div id="adminRequetes" class="admin-list hidden">
+        <p style="text-align:center;color:#999;padding:20px;">Aucune requête</p>
+    </div>
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- FENÊTRE RECHARGE (MANUEL) -->
+<!-- ========================= -->
+
+<div id="rechargeWindow" class="popup hidden">
+    <div class="popup-content">
+
+        <h2>Recharger</h2>
+
+        <!-- Étape 1 : Montant -->
+        <div id="rechargeStep1">
+            <label>Montant à recharger (minimum 5000 F)</label>
+            <input type="number" id="rechargeAmount" placeholder="Ex: 5000">
+            <button id="rechargeNext1" class="main-button">Continuer</button>
+        </div>
+
+        <!-- Étape 2 : Choisir méthode -->
+        <div id="rechargeStep2" class="hidden">
+            <p>Choisissez la méthode de dépôt :</p>
+            <button id="chooseMTN" class="method-btn">MTN</button>
+            <button id="chooseOrange" class="method-btn">Orange</button>
+            <button id="rechargeBack1" class="back-link">← Retour</button>
+        </div>
+
+        <!-- Étape 3 : Numéro + ID transaction -->
+        <div id="rechargeStep3" class="hidden">
+            <p>Déposez exactement <strong id="displayAmount">0 F</strong></p>
+            
+            <p>Sur le numéro :</p>
+            <div class="copy-box">
+                <span id="depositNumber">657142943</span>
+                <button id="copyNumberBtn">Copier</button>
+            </div>
+
+            <label>Numéro avec lequel vous envoyez</label>
+            <input type="tel" id="senderPhone" placeholder="6XXXXXXXX">
+
+           
+
+            <button id="submitRecharge" class="main-button">J'ai effectué le dépôt</button>
+            <button id="rechargeBack2" class="back-link">← Retour</button>
+        </div>
+
+        <button id="closeRecharge" class="close-popup">×</button>
+    </div>
+</div>
+
+
+<!-- ========================= -->
+<!-- FENÊTRE RETRAIT (MANUEL) -->
+<!-- ========================= -->
+
+<div id="withdrawWindow" class="popup hidden">
+    <div class="popup-content">
+
+        <h2>Retrait</h2>
+
+        <!-- Si pas de méthode enregistrée -->
+        <div id="withdrawNoMethod">
+            <p>Vous devez d'abord enregistrer votre méthode de retrait.</p>
+            <button id="goToRegisterMethod" class="main-button">Enregistrer ma méthode</button>
+        </div>
+
+        <!-- Formulaire d'enregistrement méthode -->
+        <div id="registerMethodForm" class="hidden">
+            <label>Méthode</label>
+            <select id="methodType">
+                <option value="MTN">MTN</option>
+                <option value="Orange">Orange</option>
+            </select>
+
+            <label>Numéro de réception</label>
+            <input type="tel" id="receivePhone" placeholder="6XXXXXXXX">
+
+            <label>Nom du propriétaire de la SIM</label>
+            <input type="text" id="simOwner" placeholder="Nom complet">
+
+            <button id="saveMethodBtn" class="main-button">Enregistrer</button>
+            <button id="cancelRegisterMethod" class="back-link">← Annuler</button>
+        </div>
+
+        <!-- Formulaire de demande de retrait -->
+        <div id="withdrawForm" class="hidden">
+            <p>Solde disponible : <strong id="availableBalance">0 F</strong></p>
+
+            <label>Montant à retirer (minimum 2000 F)</label>
+            <input type="number" id="withdrawAmount" placeholder="Ex: 5000">
+
+            <p>Montant reçu : <strong id="montantRecu">0 F</strong></p>
+            <p style="font-size:13px;color:#666;">(Frais de service : 20 %)</p>
+
+            <button id="submitWithdraw" class="main-button">Demander le retrait</button>
+            <button id="showWithdrawHistory" class="back-link">Voir l'historique</button>
+        </div>
+
+        <!-- Historique des retraits -->
+        <div id="withdrawHistory" class="hidden">
+            <h3>Historique des retraits</h3>
+            <div id="historyList">
+                <p>Aucun retrait pour le moment.</p>
+            </div>
+            <button id="backFromHistory" class="back-link">← Retour</button>
+        </div>
+
+        <button id="closeWithdraw" class="close-popup">×</button>
+    </div>
+</div>
+
+
+<!-- ========================= -->
+<!-- FENÊTRE HISTORIQUE -->
+<!-- ========================= -->
+
+<div id="historyWindow" class="popup hidden">
+    <div class="popup-content">
+        <h2>Historique</h2>
+
+        <div id="historyContent" style="max-height: 400px; overflow-y: auto; text-align: left;">
+            <p style="text-align:center;color:#999;">Aucun mouvement pour le moment.</p>
+        </div>
+
+        <button id="closeHistory" class="close-popup">×</button>
+    </div>
+</div>
+
+
+
+<!-- ========================= -->
+<!-- FENÊTRE REQUÊTE CLIENT -->
+<!-- ========================= -->
+
+<div id="requeteWindow" class="popup hidden">
+    <div class="popup-content">
+        <h2>Envoyer une requête</h2>
+
+        <label>Votre message</label>
+        <textarea id="requeteMessage" rows="5" placeholder="Décrivez votre problème..." style="width:100%;padding:12px;border-radius:12px;border:1px solid #ddd;font-size:14px;resize:vertical;"></textarea>
+
+        <label style="margin-top:12px;display:block;">Joindre une image (optionnel)</label>
+        <input type="file" id="requeteImage" accept="image/*" style="margin-top:8px;">
+
+        <button id="submitRequete" class="main-button">Envoyer</button>
+        <button id="closeRequete" class="close-popup">×</button>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
+
+
+
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+
+
+</html>
